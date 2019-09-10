@@ -4,7 +4,7 @@
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
-    padding: 2.5rem;
+    padding: 2rem;
     margin: 0 auto;
 }
 .display {
@@ -34,7 +34,7 @@
   }
 
   .logo {
-      margin: 1rem;
+      margin: 0.5rem;
   }
 /* style numbers component and children */
 .num-container {
