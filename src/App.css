@@ -1,22 +1,115 @@
 .container {
     background-color: #c00025;
-    width: 100%;
-    max-width: 550px;
+    max-width: 400px;
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
+    padding: 2rem;
+    margin: 0 auto;
 }
 .display {
-    margin-top: 25px;
-    height: 100px;
-    width: 450px;
+    margin: 1rem 0;
+    height: 75px;
+    width: 100%;
+    text-align: right;
     border-radius: 50px;
     color: white;
     background-color: #322c2d;
     box-shadow: 1px 1px #322c2d;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 8%;
-    font-size: 5.0rem;
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    font-size: 4.0rem;
+    align-self: center;
   }
+
+  .display-text {
+      padding: 1rem;
+  }
+
+  .App {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1.5fr repeat(5, 1fr);
+      grid-row-gap: 1rem;
+  }
+
+  .logo {
+      margin: 0.5rem;
+  }
+/* style numbers component and children */
+.num-container {
+    display: grid;
+    grid-column: 1 / 4;
+    grid-row: 3/ 7;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 1rem;
+}
+
+.number {
+    justify-self: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    box-shadow: 0px 3px 10px black;
+    font-size: 2rem;
+    color: white;
+    background-color: #435ca1;
+    outline: none;
+    cursor: pointer;
+}
+.number:hover {
+    color: #435ca1;
+    background-color: white;
+}
+
+/* style operators component and children */
+.ops-container {
+    display: grid;
+    grid-column: 4 / 5;
+    grid-row: 2 / 7;
+    grid-row-gap: 1rem;
+}
+
+.operator {
+    justify-self: center;
+    align-self: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    font-size: 2rem;
+    color: white;
+    background-color: #628fa1;
+    cursor: pointer;
+}
+
+.operator:hover {
+    color: #628fa1;
+    background-color: white;
+}
+
+/* style special operators and children */
+.specs-container {
+    display: grid;
+    grid-column: 1 / 4;
+    grid-row: 2 /3;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.specials {
+    justify-self: center;
+    align-self: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    font-size: 2rem;
+    color: white;
+    background-color: #778cc7;
+}
+
+.specials:hover {
+    color: #778cc7;
+    background-color: white;
+    cursor: pointer;
+}
+
+/*grid layout created with Brandy's help*/
