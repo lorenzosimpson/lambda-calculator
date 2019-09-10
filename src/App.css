@@ -4,7 +4,7 @@
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
-    padding: 3rem;
+    padding: 2.5rem;
     margin: 0 auto;
 }
 .display {
@@ -20,6 +20,10 @@
     grid-row: 1 / 2;
     font-size: 4.0rem;
     align-self: center;
+  }
+
+  .display-text {
+      padding: 1rem;
   }
 
   .App {
